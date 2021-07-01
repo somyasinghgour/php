@@ -1,8 +1,15 @@
 <?php
+include "dbcon.php";
 
-echo$a = $_POST['x'];
-echo$b = $_POST['y'];
+$u = $_POST['x'];
+$p = $_POST['y'];
 
+// print_r($a);
+
+//echo $u,$p;
+
+$data = "insert into student(username,password)value('$u','$p')" ;
+mysqli_query($con,$data);
 
 
 ?>
